@@ -11,8 +11,11 @@ class Animal:
         self.name = name
     
     def get_name(self) -> str:
-        pass
+        return self.name
 
-    # salva no DB
+class DataBase:
+    def __init__(self):
+        self.db = []
+
     def save(self, animal: Animal):
-        pass
+        self.db.append(animal)
